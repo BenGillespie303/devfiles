@@ -1,0 +1,93 @@
+/* line 1, ../scss/_variables.scss */
+:root {
+  --page-bg: #C2E0FA;
+  --nav-bg: #F8E268;
+  --main-bg: #B3B59B;
+  --aside-bg: #BE9E65;
+  --footer-bg: #B5778B;
+  --info-bg: black;
+  --info-txt: white;
+}
+
+/* line 1, ../scss/_base.scss */
+body {
+  background-color: var(--page-bg);
+  margin: 40px;
+}
+
+/* line 5, ../scss/_base.scss */
+header, nav, main, section, aside, footer {
+  border: solid 1px white;
+  border-radius: 10px;
+  position: relative;
+  min-height: 200px;
+}
+/* line 15, ../scss/_base.scss */
+header::after, nav::after, main::after, section::after, aside::after, footer::after {
+  display: block;
+  position: absolute;
+  font-family: "Input Mono", "Courier New", Courier, monospace;
+  background: var(--info-bg);
+  color: var(--info-txt);
+  top: 1em;
+  left: 1em;
+  height: 1.25em;
+  width: auto;
+  padding: .25em .5em;
+  border-radius: 5px;
+}
+
+/* line 20, ../scss/_base.scss */
+nav {
+  background: var(--nav-bg);
+  grid-column: "nav";
+}
+/* line 22, ../scss/_base.scss */
+nav::after {
+  content: "navigation";
+}
+
+/* line 25, ../scss/_base.scss */
+main {
+  background: var(--main-bg);
+}
+/* line 27, ../scss/_base.scss */
+main::after {
+  content: "main";
+}
+
+/* line 29, ../scss/_base.scss */
+aside {
+  background: var(--aside-bg);
+}
+/* line 31, ../scss/_base.scss */
+aside::after {
+  content: "aside";
+}
+
+/* line 33, ../scss/_base.scss */
+footer {
+  background: var(--footer-bg);
+}
+/* line 35, ../scss/_base.scss */
+footer::after {
+  content: "footer";
+}
+
+/* line 2, ../scss/_layout.scss */
+body {
+  margin: 40px;
+}
+
+/* line 6, ../scss/_layout.scss */
+.site {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat 1fr 4fr;
+  grid-gap: 1em 1.5em;
+  grid-template-areas: "nav" "title";
+}
+
+@media screen and (max-width: 500px) {
+  grid-template-areas: "title title";
+}

@@ -1,0 +1,157 @@
+/* line 144, icon/*.png */
+.icon-sprite, .icon-aa, .icon-ab, .icon-ac, .icon-ad, .icon-ae, .icon-af, .icon-ag, .icon-ah, .icon-aj, .icon-ak, .icon-al, .icon-am, .icon-an {
+  background-image: url('../img/icon-s885fe0ef83.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-aa {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ab {
+  background-position: -600px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ac {
+  background-position: -1200px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ad {
+  background-position: -1800px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ae {
+  background-position: -2400px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-af {
+  background-position: -3000px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ag {
+  background-position: -3600px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ah {
+  background-position: -4200px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-aj {
+  background-position: -4800px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ak {
+  background-position: -5400px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-al {
+  background-position: -6000px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-am {
+  background-position: -6600px 0;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-an {
+  background-position: -7200px 0;
+}
+
+/* line 5, ../scss/_base.scss */
+.icon-animation {
+  width: 600px;
+  height: 94px;
+  background: url("../img/icon-s885fe0ef83.png") left center;
+  animation: play 1s steps(13) infinite;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 13, ../scss/_base.scss */
+.icon-animation:hover {
+  width: 600px;
+  height: 94px;
+  background: url("../img/icon-s885fe0ef83.png") left center;
+  animation: play 0.35s steps(13) infinite;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@keyframes play {
+  100% {
+    background-position: -7800px;
+  }
+}
+/* line 27, ../scss/_base.scss */
+p {
+  font-size: .85em;
+  text-align: center;
+  color: transparent;
+}
+
+@keyframes playbg {
+  8% {
+    background-color: #39ed85;
+  }
+  15% {
+    background-color: #62f2f3;
+  }
+  23% {
+    background-color: #f3de62;
+  }
+  30% {
+    background-color: #f362af;
+  }
+  38% {
+    background-color: #b662f3;
+  }
+  46% {
+    background-color: #6275f3;
+  }
+  54% {
+    background-color: #62f3de;
+  }
+  62% {
+    background-color: #62f37a;
+  }
+  69% {
+    background-color: #f39762;
+  }
+  77% {
+    background-color: #f362a1;
+  }
+  85% {
+    background-color: #ecf362;
+  }
+  92% {
+    background-color: #62f2f3;
+  }
+  100% {
+    background-color: #f36262;
+  }
+}
+/* line 75, ../scss/_base.scss */
+body {
+  animation: playbg 5s infinite;
+  background-color: white;
+}
+
+/* line 80, ../scss/_base.scss */
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  color: black;
+  letter-spacing: 2px;
+}

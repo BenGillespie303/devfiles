@@ -1,0 +1,44 @@
+body {
+	background-color: var(--page-bg);
+	margin: 40px;
+}
+header, nav, main, section, aside, footer {
+	border: solid 1px white;
+	border-radius: 10px;
+	position:relative;
+	min-height: 200px;
+
+// header{
+// 	background:var(--header-bg);
+// }
+
+&::after{
+	@include info;
+}
+}
+
+nav{
+	background:var(--nav-bg);
+	&::after{content: "navigation";}
+	grid-column: "nav";
+}
+main{
+	background:var(--main-bg);
+	&::after{content: "main";}
+	grid-column: "margin-left";
+}
+section{
+	background: var(--aside-bg);
+	&::after{content: "aside";}
+	grid-column: "section";
+}
+article{
+	background: var(--footer-bg);
+	&::after{content: "article";}
+	grid-column: "article";
+}
+.container{
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}

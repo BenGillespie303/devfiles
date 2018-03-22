@@ -1,0 +1,101 @@
+$icon-layout: horizontal;
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.icon-animation{
+	width:600px;
+	height:94px;
+	background: url("../img/icon-s885fe0ef83.png") left center;
+	animation: play 1s steps(13) infinite;
+	margin-right: auto;
+	margin-left: auto;
+}
+.icon-animation:hover{
+	width:600px;
+	height:94px;
+	background: url("../img/icon-s885fe0ef83.png") left center;
+	animation: play .35s steps(13) infinite;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@keyframes play {
+	100%{
+		background-position: -7800px;
+	}
+}
+p {
+	font-size: .85em;
+	text-align: center;
+	color: transparent;
+}
+
+@keyframes playbg{
+	8%{
+		background-color: #39ed85
+	}
+	15%{
+		background-color: #62f2f3
+	}
+	23%{
+		background-color: #f3de62
+	}
+	30%{
+		background-color: #f362af
+	}
+	38%{
+		background-color: #b662f3
+	}
+	46%{
+		background-color: #6275f3
+	}
+	54%{
+		background-color: #62f3de
+	}
+	62%{
+		background-color: #62f37a
+	}
+	69%{
+		background-color: #f39762
+	}
+	77%{
+		background-color: #f362a1
+	}
+	85%{
+		background-color: #ecf362
+	}
+	92%{
+		background-color: #62f2f3
+	}
+	100%{
+		background-color: #f36262
+	}
+}
+
+body{
+	animation: playbg 5s infinite; 
+	background-color: white;
+}
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+	text-align: center;
+	color: black;
+	letter-spacing: 2px;
+}
+
+// li{
+// 	list-style:none;
+// 	display: inline-block;
+// 	padding:10px;
+// 		a{
+// 			display:inline-block;
+// 			width: 256px;
+// 			height:256px;
+// 		span{
+// 			position: absolute;
+// 			top: -9999em;
+// 			left: -9999em;
+// 		}
+// 	}
+// }

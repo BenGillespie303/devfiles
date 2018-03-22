@@ -1,0 +1,25 @@
+//temp margin to see line numbers in firefox
+body {
+	margin:40px;
+}
+
+.site {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat (1fr 4fr);
+
+	grid-gap: 1em 1.5em;
+
+
+	grid-template-areas:
+	"header"
+	"main"
+	"section"
+	"article"
+
+}
+
+// @media screen and (max-width:500px) {
+// 	grid-template-areas:
+
+// }

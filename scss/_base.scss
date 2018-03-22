@@ -1,0 +1,85 @@
+//@import 'icon/*.png';
+//@include all-icon-sprites;
+
+nav{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+li{
+	list-style:none;
+	display: inline;
+	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
+		a{
+			display:inline-block;
+			width: 80px;
+			height:30px;
+			margin-left: auto;
+			margin-right: auto;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: $bodyfont;
+			font-weight: $smallfont;
+			color: black;
+		//span{
+		//	position: absolute;
+		//	top: -9999em;
+		//	left: -9999em;
+		//}
+	}
+}
+}
+
+.container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.center{
+	text-align: center;
+}
+
+body{
+	background-color: white;
+}
+
+h1{
+		font-family: $headfont;
+		font-weight: $bigfontweight;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		font-size: 2em;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+}
+h2{
+	font-family: $headfont;
+	font-weight: $smallfont;
+	text-transform:uppercase;
+	letter-spacing: 10px;
+	font-size: .8em;
+	padding: 0px;
+	margin-top:0px;
+}
+p{
+	font-family: $bodyfont;
+	font-weight: $smallfont;
+}
+
+// $icon-layout: horizontal;
+// @import "icon/*.png";
+// @include all-icon-sprites;
+
+// .icon-animation{
+// 	width:256px;
+// 	height:256px;
+// 	background: url("../img/icon-sb76dd0fa58.png") left center;
+// 	animation: play 0.3s steps(4) infinite;
+// }
+
+// @keyframes play {
+// 	100%{
+// 		background-position: -1024px;
+// 	}
+// }

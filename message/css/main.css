@@ -1,0 +1,239 @@
+/* line 1, ../scss/_variables.scss */
+:root {
+  --page-bg: #C2E0FA;
+  --nav-bg: #F8E268;
+  --main-bg: #B3B59B;
+  --aside-bg: #BE9E65;
+  --header-bg: #B5778B;
+  --info-bg: black;
+  --info-txt: white;
+}
+
+/* line 1, ../scss/_base.scss */
+html {
+  font-size: 14px;
+}
+
+/* line 4, ../scss/_base.scss */
+body {
+  background-color: white;
+}
+
+/* line 27, ../scss/_base.scss */
+header {
+  grid-area: header;
+  text-align: center;
+  margin: 30px;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+/* line 37, ../scss/_base.scss */
+main {
+  grid-area: main;
+  margin: 15px;
+  padding: 30px;
+}
+
+/* line 47, ../scss/_base.scss */
+section {
+  grid-area: section;
+  padding: 30px;
+}
+
+/* line 54, ../scss/_base.scss */
+article {
+  grid-area: article;
+  padding: 30px;
+}
+
+/* line 61, ../scss/_base.scss */
+.container {
+  max-width: 700px;
+}
+
+/* line 65, ../scss/_base.scss */
+.site {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 70, ../scss/_base.scss */
+h1 {
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-weight: 900;
+  font-style: italic;
+  margin: 0px;
+}
+
+/* line 78, ../scss/_base.scss */
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 0px;
+  text-align: center;
+}
+
+/* line 85, ../scss/_base.scss */
+h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+/* line 91, ../scss/_base.scss */
+h4, h5 {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 96, ../scss/_base.scss */
+p {
+  font-family: 'Merriweather', serif;
+}
+
+/* line 99, ../scss/_base.scss */
+.animation {
+  height: 0px;
+  width: 10px;
+  border-bottom: 10px solid #000;
+  z-index: -10;
+  position: relative;
+  animation: increase 4s infinite cubic-bezier(0.7, 0, 0.3, 1);
+  animation-direction: alternate;
+  display: block;
+}
+
+@keyframes increase {
+  0% {
+    margin-left: 0px;
+    margin-right: auto;
+    width: 0px;
+  }
+  25% {
+    width: 1000px;
+  }
+  50% {
+    transform: translate(700, 0);
+    width: 0px;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  75% {
+    width: 1000px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 140, ../scss/_base.scss */
+  main {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* line 144, ../scss/_base.scss */
+  section {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* line 148, ../scss/_base.scss */
+  article {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 154, ../scss/_base.scss */
+  main {
+    padding: 0px;
+    margin: 5px;
+  }
+
+  /* line 158, ../scss/_base.scss */
+  section {
+    padding: 0px;
+    margin: 5px;
+  }
+
+  /* line 162, ../scss/_base.scss */
+  article {
+    padding: 0px;
+    margin: 5px;
+  }
+
+  /* line 166, ../scss/_base.scss */
+  h1 {
+    font-size: 4em;
+  }
+
+  /* line 169, ../scss/_base.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  @keyframes increase {
+    0% {
+      margin-left: 0px;
+      margin-right: auto;
+      width: 0px;
+    }
+    25% {
+      width: 500px;
+    }
+    50% {
+      transform: translate(700, 0);
+      width: 0px;
+      margin-left: auto;
+      margin-right: 0px;
+    }
+    75% {
+      width: 500px;
+    }
+    100% {
+      margin-left: 0px;
+      margin-right: auto;
+    }
+  }
+  /* line 199, ../scss/_base.scss */
+  .animation {
+    height: 0px;
+    width: 10px;
+    border-bottom: 5px solid #000;
+    z-index: -10;
+    position: relative;
+    animation: increase 4s infinite cubic-bezier(0.7, 0, 0.3, 1);
+    animation-direction: alternate;
+    display: block;
+  }
+}
+/* line 1, ../scss/_layout.scss */
+body {
+  margin: 40px;
+}
+
+/* line 5, ../scss/_layout.scss */
+.site {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  grid-gap: 1em 1.5em;
+  grid-template-areas: "header header header header" ". main main ." ". article section .";
+}
+
+@media screen and (max-width: 700px) {
+  /* line 20, ../scss/_layout.scss */
+  .site {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template: "header" "main" "article" "section";
+  }
+}

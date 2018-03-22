@@ -1,0 +1,40 @@
+body {
+	background:$bgcolor;
+	font-size: 1.5em;
+}
+header{
+	@include rounded_corner;
+	background: white;
+	h1{
+		font-family: $headfont;
+		}//h1
+}//header
+body{
+	font-family: $headfont;
+}
+nav{
+	@include box;
+	ul{
+		margin-left: -40px;
+		li{
+			display: inline-block;
+			list-style: none;
+			padding-right:30px;
+			a{
+				text-decoration:none;
+				padding: 8px;
+			}
+			a:link, a:visited{
+				color:black;
+			}
+			a:hover, a:active{
+				background:black;
+				color: white;
+			}
+			
+		}//li
+		li:nth-of-type(2n){
+				font-size:3em;
+			}
+	}//ul
+}//nav
