@@ -1,0 +1,83 @@
+html{
+	background-color: white;
+}
+.invisible{
+	display: none;
+}
+nav{
+	list-style: none;
+	margin-top: -85px;
+	padding-top: -40px;
+	padding: 0;
+	text-align: right;
+}
+nav li{
+	display: inline;
+	text-decoration: none;
+	font-family: Arial;
+	font-style: italic;
+	font-weight: 900;
+	color: black;
+}
+nav a{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: black;
+}
+a:after{
+	background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 7px;
+    left:0%;
+    position:relative;
+    background:#000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width:0;
+}
+a:hover:after{
+	width:100%;
+    left:0%;
+}
+header{
+	max-width: 120px;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: 20px;
+	
+}
+.container{
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+// .clip {
+//     position: absolute;
+//     clip: rect(30%, 30%, 30%, 30%);
+// }
+.site{
+	margin-top: 20px;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+}
+h1{
+	color: black;
+	font-family: Arial;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-style: italic;
+	text-align: center;
+}
+
+main{
+	background-color: white;
+}

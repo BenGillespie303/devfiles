@@ -74,7 +74,7 @@ h2 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-size: 2em;
-  margin-top: 0px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -105,8 +105,7 @@ p {
   border-bottom: 10px solid #000;
   z-index: -10;
   position: relative;
-  animation: increase 4s infinite cubic-bezier(0.7, 0, 0.3, 1);
-  animation-direction: alternate;
+  animation: increase 4s infinite ease-in-out;
   display: block;
 }
 
@@ -116,67 +115,60 @@ p {
     margin-right: auto;
     width: 0px;
   }
-  25% {
-    width: 1000px;
-  }
   50% {
+    width: 750px;
+  }
+  100% {
     transform: translate(700, 0);
     width: 0px;
     margin-left: auto;
     margin-right: 0px;
   }
-  75% {
-    width: 1000px;
-  }
-  100% {
-    margin-left: 0px;
-    margin-right: auto;
-  }
 }
 @media screen and (max-width: 800px) {
-  /* line 140, ../scss/_base.scss */
+  /* line 170, ../scss/_base.scss */
   main {
     padding: 10px;
     margin: 10px;
   }
 
-  /* line 144, ../scss/_base.scss */
+  /* line 174, ../scss/_base.scss */
   section {
     padding: 10px;
     margin: 10px;
   }
 
-  /* line 148, ../scss/_base.scss */
+  /* line 178, ../scss/_base.scss */
   article {
     padding: 10px;
     margin: 10px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 154, ../scss/_base.scss */
+  /* line 184, ../scss/_base.scss */
   main {
     padding: 0px;
     margin: 5px;
   }
 
-  /* line 158, ../scss/_base.scss */
+  /* line 188, ../scss/_base.scss */
   section {
     padding: 0px;
     margin: 5px;
   }
 
-  /* line 162, ../scss/_base.scss */
+  /* line 192, ../scss/_base.scss */
   article {
     padding: 0px;
     margin: 5px;
   }
 
-  /* line 166, ../scss/_base.scss */
+  /* line 196, ../scss/_base.scss */
   h1 {
     font-size: 4em;
   }
 
-  /* line 169, ../scss/_base.scss */
+  /* line 199, ../scss/_base.scss */
   h2 {
     font-size: 1.5em;
   }
@@ -187,32 +179,24 @@ p {
       margin-right: auto;
       width: 0px;
     }
-    25% {
-      width: 500px;
-    }
     50% {
+      width: 300px;
+    }
+    100% {
       transform: translate(700, 0);
       width: 0px;
       margin-left: auto;
       margin-right: 0px;
     }
-    75% {
-      width: 500px;
-    }
-    100% {
-      margin-left: 0px;
-      margin-right: auto;
-    }
   }
-  /* line 199, ../scss/_base.scss */
+  /* line 219, ../scss/_base.scss */
   .animation {
     height: 0px;
     width: 10px;
     border-bottom: 5px solid #000;
     z-index: -10;
     position: relative;
-    animation: increase 4s infinite cubic-bezier(0.7, 0, 0.3, 1);
-    animation-direction: alternate;
+    animation: increase 4s infinite ease-in-out;
     display: block;
   }
 }
